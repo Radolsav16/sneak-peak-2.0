@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+import { Header } from "../components/header/Header";
 import { termsCondition } from "./termsCondition";
 
 export default function TermsAndConditions() {

@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+import { Header } from "../components/header/Header";
 import { refundPolicy } from "./refundPolicy";
 export default function RefundPolicy() {
   return (

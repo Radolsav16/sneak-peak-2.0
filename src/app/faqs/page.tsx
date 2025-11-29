@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/app/faqs/Faqs.module.scss";
-import Header from "../components/header/Header";
+import { Header } from "../components/header/Header";
 import useFaqs from "./useFaqs";
 import { faqs } from "./faqs";
 

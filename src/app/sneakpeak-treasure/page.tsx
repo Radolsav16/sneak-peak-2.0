@@ -1,5 +1,5 @@
 import s from "./Treasure.module.scss";
-import WHeader from "../components/header/WHeader";
+import WHeader from "../components/wheader/WHeader";
 import Link from "next/link";
 import { treasure } from "./treasure";
 export default function TreasureHuntPage() {
