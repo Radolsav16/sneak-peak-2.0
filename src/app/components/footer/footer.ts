@@ -1,0 +1,32 @@
+export const footer = {
+    logoUrl:'/sneakpeak-full-black-footer.svg',
+    logoAlt:'Sneakpeak Logo',
+    middleHeading:'ПОЛИТИКА',
+    middleLinks:[
+        {label:'Политика за поверителност',href:'/privacy-policy'},
+        {label:'Общи условия',href:'/terms-conditions'},
+        {label:'Политика за билети и възстановяване',href:'/refund-policy'},
+        {label:'Въпроси',href:'/faqs'},
+    ],
+    coloumnHeading:'МЕНЮ',
+    coloumnLinks:[
+        {label:'Начало',href:'/'},
+        {label:'За нас',href:'/about'},
+        {label:'Sneakблог',href:'/sneakblog'},
+        {label:'Контакти',href:'/contacts'},
+    ],
+    rightHeading:'ПОСЛЕДВАЙТЕ НИ',
+
+    instagramLink:'https://www.instagram.com/sneak25peak/',
+    instagramImg:'/instagram-svgrepo-com.svg',
+    tiktokLink:'https://www.tiktok.com/@sneak25peak',
+    tiktokImg:'/tiktok-svgrepo-com.svg',
+    youtubeLink:'https://www.youtube.com/@sneak25peak',
+    youtubeImg:'/youtube.png',
+    twitterLink:'https://x.com/sneakpeak2025',
+    twitterImg:'/twitter.png',
+    contactHeading:'КОНТАКТИ',
+    contactNumber:'+359 888407209 Пон - Пет,',
+    contactEmail:'sneakpeak2k24@gmail.com',
+    contactText:'10:00 - 18:30ч.',
+}

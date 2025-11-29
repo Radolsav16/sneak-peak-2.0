@@ -1,0 +1,57 @@
+.team-section {
+  background-color: white;
+  padding: 6rem 2rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .team-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-montserrat);
+    margin-bottom: 3rem;
+  }
+
+  .team-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    .team-image-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      .team-image {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 20px;
+      }
+    }
+
+    .team-text {
+      flex: 1;
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: right;
+      color: black;
+      font-weight: bold;
+      font-family: var(--font-montserrat);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .team-content {
+      flex-direction: column;
+      text-align: center;
+
+      .team-text {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

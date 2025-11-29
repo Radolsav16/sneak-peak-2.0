@@ -1,0 +1,158 @@
+.sneakblog {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .blog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 900px;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      margin-top: 0.2rem;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      opacity: 0.85;
+    }
+
+    .logo-left,
+    .logo-right {
+      position: absolute;
+      top: 15px;
+      bottom: 0;
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .logo-left {
+      right:225px;
+    }
+
+    .logo-right {
+      left: 225px;
+    }
+  }
+
+  .blog-card {
+    background: white;
+    color: black;
+    border-radius: 18px;
+    padding: 2rem 2.2rem;
+    margin: 2rem auto;
+    position: relative;
+    cursor: pointer;
+
+    width: 100%;
+    max-width: 850px;
+
+    .date {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+      font-family: var(--font-montserrat);
+    }
+
+    .desc {
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.6;
+      max-width: 65%;
+    }
+
+    .blog-image {
+      position: absolute;
+      right: 0.5rem;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 290px;
+      object-fit: contain;
+    }
+    .treasure-img{
+       position: absolute;
+      right: 0.5rem;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 300px;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .blog-card {
+      margin-top: 4rem;
+      padding: 1.5rem;
+      text-align: center;
+
+      .desc {
+        max-width: 100%;
+      }
+
+      .blog-image {
+        position: relative;
+        margin: 1.5rem auto 0;
+        top: 0;
+        right: 0;
+        transform: none;
+        width: 220px;
+        display: block;
+      }
+    }
+
+    .blog-header h1 {
+      font-size: 2rem;
+    }
+
+    .logo-left {
+      right:15px;
+    }
+
+    .logo-right {
+      left: 15px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .blog-header {
+    
+    .logo-left {
+      right:0;
+    }
+
+    .logo-right {
+      left: 0;
+    }
+    }
+
+    .blog-card h2 {
+      font-size: 1.1rem;
+    }
+  }
+}

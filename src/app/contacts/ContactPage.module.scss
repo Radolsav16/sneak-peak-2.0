@@ -1,0 +1,127 @@
+.contact-page {
+  width: 100%;
+  background: #000;
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+
+  .contact-header {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    div {
+      font-size: 1rem;
+      line-height: 1.6;
+      min-width: 150px;
+    }
+  }
+
+  .contact-form {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    padding-right: 5px;
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background: transparent;
+      border: 2px solid #fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      color: #fff;
+      margin-bottom: 1.4rem;
+      font-size: 1rem;
+    }
+
+    select {
+  width: 100%;
+  background: #000;             
+  border: 2px solid #fff; 
+  padding: 0.9rem 1rem;
+  padding-right: 2.5rem;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #fff;
+  background: #111; 
+}
+
+.contact-form select option {
+  color: #000;
+  background: #fff;
+}
+
+  
+
+    .row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .col {
+        flex: 1;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .info-text {
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .submit-btn {
+      display: block;
+      margin-left: auto;
+      background: transparent;
+      padding: 0.8rem 2.5rem;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .contact-form .row {
+      flex-direction: column;
+    }
+
+    .contact-header h1 {
+      font-size: 2rem;
+    }
+  }
+}

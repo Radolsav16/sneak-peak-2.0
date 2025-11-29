@@ -1,0 +1,102 @@
+.aboutSection {
+  background-color: white;
+  color: black;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-montserrat);
+    margin-bottom: 3rem;
+  }
+
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .textSection {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    font-family: var(--font-montserrat);
+    color: black;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+  }
+
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 1.5rem;
+      animation: float 3s ease-in-out infinite;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .contentWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .textSection {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .moreButton {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+
+    .imageSection {
+      margin-top: 2rem;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
