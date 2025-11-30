@@ -19,8 +19,8 @@ export default function AboutUs() {
           <img
             src={aboutPage.imageUrl}
             alt={aboutPage.imageAlt}
-            width={600}
-            height={300} />
+            width={180}
+            height={180} />
         </div>
       </div>
       <TeamGoal />

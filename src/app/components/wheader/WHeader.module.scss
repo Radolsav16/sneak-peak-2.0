@@ -104,6 +104,7 @@
   }
 
   @media (max-width: 900px) {
+    padding: 1.2rem 2rem;
     .menu-toggle {
       display: flex;
     }
@@ -122,8 +123,8 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      padding: 0;
-      position: relative;
+      position: absolute;
+      right: 40;
       z-index: 1100;
 
       span {

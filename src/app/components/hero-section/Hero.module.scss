@@ -2,19 +2,16 @@
   background-color: #000;
   color: #fff;
   width: 100%;
-  min-height: 65vh;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
 
   .heroContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 2400px;
+    max-width: 1600px;
     width: 100%;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .textSection {
@@ -24,22 +21,19 @@
     justify-content: center;
 
     span {
-      display: block;
-      font-size: 3.8rem;
+      font-size: clamp(2rem, 3vw, 4rem);
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 1.2;
-      animation: fadeIn 1.2s ease-in-out;
       font-family: var(--font-poppins);
     }
 
     h2 {
-      font-size: 1.7rem;
+      font-size: clamp(1rem, 1.2vw, 2rem);
       color: #ccc;
       font-weight: bold;
-      margin-bottom: 0.75rem;
-      animation: fadeIn 1.5s ease-in-out;
+      margin-top: 0.5rem;
       text-transform: uppercase;
       font-family: var(--font-montserrat);
     }
@@ -49,13 +43,10 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 850px;
-    width: 100%;
 
     img {
       width: 100%;
-      max-width: 900px;
+      max-width: 800px;
       height: auto;
       border-radius: 1.5rem;
       animation: float 3s ease-in-out infinite;
@@ -63,130 +54,38 @@
   }
 
 
-  @media (max-width: 1440px) {
-    .heroContent{
-      margin-top: 2.5rem;
-      margin-left: 4rem;
-    }
-    
-    .textSection span {
-      font-size: 3.2rem;
-      font-weight: bold;
-
-    }
-    .textSection h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .imageSection img {
-      max-width: 750px;
-      height: auto;
-    }
-  }
-
+  
   @media (max-width: 1024px) {
-    .heroContent{
-      margin-top: 2.5rem;
-    }
-    
-    flex-direction: column;
-    min-height: 45vh;
-
     .heroContent {
       flex-direction: column;
-      align-items: center;
-    }
-
-    .textSection {
-      align-items: center;
       text-align: center;
-      span {
-        font-size: 2.8rem;
-        font-weight: bolder;
-      }
-      h2 {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        font-weight: bolder;
-
-      }
     }
 
-    .imageSection {
-      width: 100%;
-      img {
-        max-width: 600px;
-        height: auto;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    padding: 1.5rem;
-    .heroContent{
-       margin-top: 2.5rem;
-    }
-   
-
-
-    .textSection span {
-      font-size: 2.4rem;
-      font-weight: bold;
-
-    }
-    .textSection h2 {
-      font-size: 1.2rem;
-      font-weight: bold;
-
-    }
     .imageSection img {
-      max-width: 450px;
-      height: auto;
+      max-width: 600px;
     }
   }
 
-  @media (max-width: 480px) {
-    padding: 1rem;
-    
-
-    .heroContent{
-      margin-top: 2.5rem;
-    }
-
-
+ 
+  @media (max-width: 768px) {
     .textSection span {
-      font-size: 1.8rem;
-      font-weight: bold;
+      font-size: clamp(1.6rem, 6vw, 2.6rem);
     }
     .textSection h2 {
-      font-size: 1rem;
-      font-weight: bold;
+      font-size: clamp(0.9rem, 2.5vw, 1.3rem);
     }
+
+    .imageSection img {
+      max-width: 420px;
+    }
+  }
+
+  
+  @media (max-width: 480px) {
     .imageSection img {
       max-width: 300px;
-      height: auto;
-    }
-  }
-
-
-  @media (min-width: 2500px) {
-    .heroContent{
-      margin-top: 2.5rem;
-      margin-left: 4rem;
-    }
-
-    .textSection span {
-      font-size: 6rem;
-      font-weight: bold;
-
-    }
-    .textSection h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    .imageSection img {
-      max-width: 1200px;
     }
   }
 }
+
 

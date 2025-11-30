@@ -8,8 +8,8 @@ export default function HeroAboutSection() {
         <img
           src={heroData.heroAboutImage}
           alt={heroData.heroAboutImageAlt}
-          width={600}
-          height={300}
+          width={180}
+          height={180}
         />
       </div>
       <div className={styles.textSection}>

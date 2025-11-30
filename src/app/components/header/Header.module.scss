@@ -57,7 +57,6 @@
     }
   }
 
-  /* HAMBURGER DEFAULT HIDDEN */
   .menu-toggle {
     display: none;
   }
@@ -92,8 +91,8 @@
 
         a {
           color: #fff;
-          font-size: 1.5rem;
-          font-weight: 600;
+          font-size: 1.8rem;
+          font-weight: bold;
           text-decoration: none;
           transition: 0.3s ease;
 
@@ -123,8 +122,10 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      position: relative;
+      position: absolute;
+      right: 40;
       z-index: 1100;
+
 
       span {
         width: 26px;

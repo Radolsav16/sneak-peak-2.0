@@ -40,6 +40,7 @@ export default function WFooter() {
             </ul>
           </div>
         </div>
+        
 
         <div className={s.footer__right}>
           <h3>{footer.rightHeading}</h3>

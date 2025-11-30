@@ -1,11 +1,12 @@
 .sneakecorn-section {
   background-color: #000;
   color: white;
-  padding: 3rem;
+  padding: 3rem 2rem;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
 
+  /* HEADER */
   &__header {
     margin-bottom: 2rem;
 
@@ -24,19 +25,20 @@
     }
   }
 
+  /* CONTENT WRAPPER */
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 2rem;
+    gap: 2.5rem;
 
-    /* Make both columns ALWAYS equal height */
+    /* LEFT + RIGHT COLUMNS SAME HEIGHT */
     > .sneakecorn-section__left,
     > .sneakecorn-section__right {
       flex: 1;
       display: flex;
       flex-direction: column;
-      height: 100%;     /* ensure equal height */
+      height: auto;
     }
 
     /* LEFT COLUMN */
@@ -45,13 +47,13 @@
         line-height: 1.6;
         margin-bottom: 1rem;
         font-weight: bold;
-        flex: 1; /* Fill all available height */
+        flex-grow: 1;
       }
 
       .sneakecorn-section__cta-button {
-        margin-top: auto; /* push button to bottom */
-        width: 130px;
-        padding: 7px 12px;
+        margin-top: auto; /* aligns with map bottom */
+        width: 150px;
+        padding: 10px 14px;
         background-color: #fff;
         color: #000;
         border: none;
@@ -59,29 +61,33 @@
         font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.2s ease;
+        transition: 0.2s ease;
 
         &:hover {
-          background-color: #e0e0e0;
+          background-color: #d6d6d6;
         }
       }
     }
 
     /* RIGHT COLUMN */
     .sneakecorn-section__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       gap: 1.5rem;
 
       .sneakecorn-section__main-image {
         width: 100%;
         height: auto;
-        object-fit: contain;
+        border-radius: 10px;
+        object-fit: cover;
       }
 
       .sneakecorn-section__sponsors {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
         justify-content: center;
+        gap: 1.2rem;
 
         .sneakecorn-section__sponsor-logo {
           width: 90px;
@@ -90,36 +96,68 @@
         }
       }
 
-      /* Iframe always stays at the bottom */
+      /* MAP STAYS AT THE BOTTOM */
       .sneakecorn-section__map {
         margin-top: auto;
 
         iframe {
           width: 100%;
           height: 260px;
-          border: 0;
-          border-radius: 6px;
+          border: none;
+          border-radius: 10px;
         }
       }
     }
   }
 
+  /* ========== TABLET RESPONSIVE ========== */
+  @media (max-width: 1024px) {
+    &__content {
+      gap: 2rem;
+
+      .sneakecorn-section__title {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  /* ========== MOBILE RESPONSIVE ========== */
   @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+
+    &__header .sneakecorn-section__title {
+      font-size: 2rem;
+    }
+
     &__content {
       flex-direction: column;
 
       > .sneakecorn-section__left,
       > .sneakecorn-section__right {
+        width: 100%;
         height: auto;
       }
 
       .sneakecorn-section__right .sneakecorn-section__map iframe {
         height: 300px;
       }
+    }
+  }
 
-      .sneakecorn-section__title {
-        font-size: 2rem;
-      }
+  /* ========== SMALL MOBILE ========== */
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+
+    &__header .sneakecorn-section__title {
+      font-size: 1.7rem;
+    }
+
+    .sneakecorn-section__sponsor-logo {
+      width: 70px !important;
+    }
+
+    .sneakecorn-section__main-image {
+      border-radius: 8px;
     }
   }
 }
